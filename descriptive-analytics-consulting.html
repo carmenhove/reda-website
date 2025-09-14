@@ -1,0 +1,185 @@
+
+<!-- Multi-page website so that we can customize SEO for each of our services and retain individualized landing pages for Google Ads. -->
+<!-- Media queries are "if, then" statements for styling so that design can respond to different viewports -->
+
+<!-- This is an HTML5 document type -->
+<!DOCTYPE html>
+
+<!-- html is the root element, best practice is to specify language -->
+<html lang="en">
+    <!-- head contains meta data: information for machine processing, not human-readability.  -->
+  <head>
+      <!-- sets the character coding -->
+      <meta charset="utf-8"/>
+      <!-- "user-scalable=no means the user can't zoom, not usually appropriate" -->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="Window Cleaning Kitsap County"/>
+      <!-- document title -->
+      <title> Descriptive Analytics Consulting </title>
+      <!-- set the base html -->
+        <!-- <base href="https://www.seaglasscleaningservices.com"> -->
+        <!-- link to css file for formating -->
+      <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <!-- body is where the visible text body of the specific page begins -->
+  <body>
+    <!-- Because the navigation is human-visible information, it should go in header<> rather than head<> -->
+    <header>
+      <div class="logo">
+        <img src="images/Reda banner.svg" alt="Company Logo">
+      </div>
+      
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+      <nav class="primary-navigation" id="navMenu">
+        <ul class="main-menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="descriptive-analytics-consulting.html">Descriptive Analytics</a></li>
+              <li><a href="diagnostic-analytics-consulting copy.html">Diagnostic Analytics</a></li>
+              <li><a href="predictive-analytics-consulting.html">Predictive Analytics</a></li>
+              <li><a href="prescriptive-analytics-consulting.html">Prescriptive Analytics</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="contact.html">Contact</a></li> -->
+          <li><a href="request-free-consultation.html">Submit Inquiry</a></li>
+          <!-- <li><a href="privacy-policy.html">Privacy Policy</a></li> -->
+          <!-- <li><a href="careers.html">Careers</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <!-- JS for Navigation responsivity -->
+    <script src="nav.js"></script>
+
+    <!-- Main content -->
+    <main>
+      
+      <!-- Banner image -->
+      <section class="banner">
+        <!-- <h1 id="title-h1">Reda Consulting</h1> -->
+        <img src="images/background.jpg" alt="Reda Consulting" />
+      </section>
+
+      <!-- Main info -->
+      <section>
+        <div class="main-info">
+            <div class="moveable-content">
+                <h1>Descriptive analytics</h1>
+                <p class="business-info">Highly customized deliverables with a emphasis on interpretability and the end-user.</p> 
+                <hr>                                       
+    
+                <div class="request-bid">
+                    <p>Request a free initial consultation.</p>
+                    <div class="button-wrapper">
+                        <div class="button-group">
+                            <button class="contact-button" type="button"><a href="tel:360-621-3508">Phone</a></button>
+                            <button class="contact-button" type="button"><a href="email: reda.consulting@protonmail.com">Email</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    
+      <!-- Photos -->
+      <section class="photos">
+        <div class="three-column-layout">
+          <div>
+            <img src="images/KR_pics/highlights/Seaglass-331.jpg" alt="Professional window cleaner.">
+            <!-- <figcaption>Traditional nose-to-the-glass cleaning.</figcaption> -->
+          </div>  
+          <div>
+            <img src="images/KR_pics/highlights/Seaglass-332.jpg" alt="Clean window sill.">
+            <!-- <figcaption>Sill wipedown.</figcaption> -->
+          </div>
+          <div>
+            <img src="images/KR_pics/highlights/Seaglass-338.jpg" alt="A dirty skylight window.">
+            <!-- <figcaption>Before roof and window cleaning.</figcaption> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Process -->
+      <section class="our-process">
+        <h2> OUR PROCESS</h2>
+        <div class="moveable-content" id="left-push">
+        <!-- <p> We serve <strong>Kitsap County</strong>, including the following locations:</p> -->
+          <ul>
+            <li>Our window cleaning services include interior and exterior window panes, skylights, screens, sills, and exterior tracks, plus a comprehensive assessment of your windows.</li>
+            <li>For all first-time cleanings, we use <strong>traditional cleaning methods</strong> (a ladder, squeegee, and hand-held applicator) to thoroughly clean and visually inspect each pane of glass. </li>
+            <li>If a regular maintenance schedule is implemented, we may also use a <strong>water-fed pole and water filteration system</strong> to keep your <em>exterior</em> window panes clean (depending on your window type).</li>
+          </ul>
+        </div>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d703150.8526899233!2d-122.9665516!3d47.5276059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7d9b1c58aa47781%3A0x4adfa91d2ce15357!2sSeaGlass%20Window%20Cleaning%2C%20LLC!5e1!3m2!1sen!2sus!4v1724444921478!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+      </section> 
+      
+      <section class="testimonials">
+        <h2> TESTIMONIALS</h2>
+        <div class="moveable-content">
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-0b1fa711-9ab9-4a09-aa8c-d95d82508d44" data-elfsight-app-lazy></div>
+        </div>
+      </section>
+
+      <!-- Frequently Asked Questions -->
+      <!-- Optimized for SEO keywords, provides useful content for users based on common Google queries -->
+      <section class="faq">
+          <h2>Frequently Asked Questions (FAQs)</h2>
+          <div class="moveable-content">
+
+          <h3> What are the benefits of having my windows professionally cleaned?</h3>
+          <p>Professionally cleaning the inside and outside of your windows on a regular basis will <a href="https://www.pella.com/ideas/windows/benefits-of-cleaning-windows/#:~:text=Why%20clean%20windows?,two%20months%20for%20optimal%20performance."> enhance energy efficiency, boost curb appeal, increase visibility, and support the longevity of the window unit</a>. A reputable window cleaning professional will have all the specialized equipment, safety equipment, and experience needed to provide a superior outcome.</p>
+
+          <h3> Can I clean my own windows to save money?</h3>
+          <p>If your home is a single-story rambler with no skylights and you have all the required equipment (different sized squeegees, rubber, glass cleaner, applicator, ladders, ladder stand-offs, ladder stabilizers, etc.) and the patience to learn <a href="https://www.youtube.com/watch?v=_PCIWGEmR1U" target="_blank">proper technique</a>, then go for it! However, keep in mind that it is usually safer, more time-efficient, and more economical to to hire a licensed and insured professional. In the USA alone, <a href="https://blogs.cdc.gov/niosh-science-blog/2017/03/13/ladder-safety-month/#:~:text=March%20is%20the%20first%2Dever,2%20from%20ladder%2Drelated%20injuries." target="_blank"> over half a million people</a> are admitted to the emergency room every year for ladder related injuries.</p>
+          
+          <h3> How much will it cost to get my windows cleaned?</h3>
+          <p>At SeaGlass Cleaning Services, our window cleaning service includes cleaning the interior and exterior of the window pane (unless a client requests otherwise), cleaning the screen, wiping down the sill, and cleaning the exterior track. In contrast, some companies will charge a base rate for cleaning the window pane itself and charge additional fees for any "add-on" services such as cleaning the screen. When getting quotes, just make sure you know what the listed price covers!   </p>
+          
+          <h3> What factors influence the price of window cleaning?</h4>
+          <p>There are multiple factors that will affect the cost of window cleaning. For example, a difficult-to-access large picture window on the second story will be priced higher than a window on the main level, since it will take more effort and more time to clean. Likewise, if you just finished building your home and the windows have <i>never</i> been cleaned, then the first cleaning will be more expensive than subsequent services. See more below.</p>
+          
+          <h3> Why does construction clean-up cost so much more?</h4>
+          <p> Even if you hired the best contractor in the world, windows take an absolute beating during construction. All the grime, dust, paint, caulk, and other debris take between 2-3x more effort and time to remove compared to a regular maintenance window cleaning. The longer you wait to complete this initial deep clean, the worse it will get! Stickers, adhesive, paint, and other debris left on a window will eventually get baked on to the glass, costing you significantly more money in the long run. </p>
+          
+          <h3>What is a water-fed pole? When do you use it?</h3>
+          <p>A water-fed pole is a tool used to clean the exterior side of windows from the ground. The pole itself is part of a larger system that includes a water filtration system. The filtration system is hooked up to the water supply, allowing purified water to run through the brush end of the water-fed pole. The bristles on the brush are specially made for windows and the purified water will clean the glass without leaving streaks or hard-water spots. At SeaGlass, we use water-fed poles only when we believe they provide the best possible product or when ladder access is unsafe.</p>
+          
+          <h3> Should I pressure wash my windows? </h3>
+          <p>No, never pressure wash your windows. Pressure washers are amazing tools for cleaning solid non-porous surfaces, such as sidewalks and patios, but they should not be used on windows. Due to the high risk of damage, using a pressure washer to clean your windows will almost always void the warranty. For example, <a href = "https://www.milgard.com/sites/milgard/files/2023-02/211004_lifetime_limited_warranty.pdf" target = "_blank">Milgard's standard warranty</a> states that <em>"Any application of force or materials, <strong>such as power washing</strong> or the use of harsh chemicals"</em> will void the warranty. Both squeegees and water-fed poles are specifically designed for windows and distribute any pressure applied to the glass over a larger surface area. Water-fed pole systems, which apply low-pressure water to the glass, use purified water so that minerals and other elements found in non-filtered water won't etch onto the surface of the glass. </p>
+
+          <h3> How often should I have my windows cleaned? </h3>
+          <p>We generally recommend getting your windows cleaned at least twice a year, most commonly in Spring and Fall. Cleaning your windows in the Spring will remove the debris that gets stuck on window panes during heavy rain and wind storms and provides enhanced visibility as the weather gets nicer. Cleaning again in Autumn will remove the pollen, dust, and water spots from sprinkler systems that often accumulate during the dry months. A regular bi-annual maintenance schedule will also keep you informed of any larger window problems, such as failed seals (see below).</p>
+
+          <h3> What are some common window problems?</h3>
+          
+          <h4>Failed Seals</h4>
+          <p>Unlike the single-pane windows of yore, most modern windows are either double-pane and triple-pane. The panes are separated with inert gas and sealed with a special type of sealant. These windows are much more energy efficient, but they are also prone to seal failure. When the sealant fails on double and triple-pane windows, the gas inside escapes while moisture enters. This phenomenon greatly minimizes the clarity, aesthetics, and functionality of the glass. As part of our window cleaning service, we always provide you with an updated assessment and point out any windows that show signs of seal failure.</p>
+
+          <h4>Scratches</h4>
+          <p>Scratches are another common window problem that we see on the job. When it comes to scratches, prevention is key. Once the glass is scratched, specialized labor is needed to fix it. Tempered glass is particularly sensitive to abrasives. At SeaGlass, we use very conservative methods to clean tempered glass in order to eliminate the risk of scratching.</p>
+
+          <h4>Hard water spots</h4>
+          <p>Windows that are exposed to strong winds, sideways rain, and sprinklers are prone to developing hard water spots. While it seems like rainwater and tap water should be purely H<sub>2</sub>0, both contain trace mineral elements that stick to the glass and grind into the surface over time. While you can't control the wind and rain, you can mitigate the damage caused by your sprinkler system by adjusting the settings to mimize contact with any windows (or the building itself). </p>
+
+          <h4>Vinyl deterioration</h4>
+          <p>Over time, UV rays from the sun wear down vinyl and cause it to leech onto the window pane. Without regular cleaning to remove this residue from the frames and glass panes, noticeable streaks will form. There isn't much you can do to stop the sun from breaking down the vinyl, but regular cleanings will go a a long way in lengthening the lifespan of your window unit. </p>
+        </div>
+        </section>
+    
+    <!-- Footer -->
+    <footer>
+        <!-- <div>
+          <img src="images/transparent-logo.svg" alt="">
+        </div> -->
+        <div class="footer-text">
+          <span>&copy; Copyright 2025 Reda Consulting</span>
+          <span> <a href="privacy-policy.html" style="color: white;">Privacy Policy</a> | <a href="careers.html" style="color: white;">Careers</a></span>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,37 @@
+/* Mobile styles */
+@media (max-width: 929px) {
+    .primary-navigation {
+      width: 100%;
+      flex-direction: column;
+      display: none;
+    }
+  
+    .primary-navigation.active {
+      display: flex;
+    }
+  
+    .main-menu {
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .main-menu li {
+      width: 100%;
+    }
+  
+    .dropdown-menu {
+      position: static;
+    }
+  
+    .dropdown-menu li a {
+      padding-left: 30px;
+    }
+  
+    .dropdown.open .dropdown-menu {
+      display: block;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
