@@ -590,3 +590,7 @@ justify-content: space-between;
   border-radius: 1rem; /* <-- rounds corners */
   overflow: hidden; 
 }
+
+.analytics-type{
+  text-align: left;
+}

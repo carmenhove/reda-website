@@ -37,8 +37,8 @@ function sendmail($to, $nameto, $subject, $message, $altmess) {
   $mail->CharSet   = 'UTF-8';
   $mail->isSMTP();
   $mail->SMTPAuth   = true;
-  $mail->Host       = "smtp.host.tld"; // your SMTP server
-  $mail->Port       = 465;
+  $mail->Host       = "smtp.protonmail.ch"; // your SMTP server
+  $mail->Port       = 587;
   $mail->Username   = $from;
   $mail->Password   = "Letsgo!234";       // your email password
   $mail->SMTPSecure = "ssl";
