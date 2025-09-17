@@ -602,15 +602,3 @@ background-image:
   font-size: 1.75rem;
 }
 
-#request-form {
-  max-width: 400px;      /* limit width so it doesn’t stretch */
-  margin: 0 auto;        /* centers it horizontally */
-  padding: 1rem;         
-}
-
-#main-info-section {
-  display: flex;
-  justify-content: center;   /* horizontal centering */
-  align-items: center;       /* vertical centering */
-  min-height: 100vh;         /* full viewport height */
-}
