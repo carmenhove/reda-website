@@ -589,49 +589,28 @@ background-size: cover;
 color: white;
 padding: 4rem 1rem;
 text-align: center;
-}
-
-/* Specific backgrounds */
-#window-header {
 background-image: 
   linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url('../images/KR_pics/Seaglass-323.webp');
+  url('../images/background.jpg');
 }
 
-#solar-header {
-background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url('../images/KR_pics/IMG_9359.webp');
-  background-position: bottom;
+.overview h1{
+  color: white;
 }
 
-#roof-header,
-#moss-header {
-background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url('../images/KR_pics/Seaglass-225.webp');
+.overview p{
+  font-size: 1.75rem;
 }
 
-#crew-header,
-#privacy-page,
-#career-page,
-#contact-page {
-background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url('../images/KR_pics/Seaglass-285.webp');
+#request-form {
+  max-width: 400px;      /* limit width so it doesn’t stretch */
+  margin: 0 auto;        /* centers it horizontally */
+  padding: 1rem;         
 }
 
-.service-areas,
-.about-us,
-.testimonials {
-background-color: white;
-}
-
-.service-areas ul{
-text-align: center;
-font-size: 16px;
-}
-
-#description-p{
-  text-align: left;
+#main-info-section {
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+  align-items: center;       /* vertical centering */
+  min-height: 100vh;         /* full viewport height */
 }
