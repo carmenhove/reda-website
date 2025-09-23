@@ -293,7 +293,15 @@ button {
   justify-content: top;
 }
 
-/* GRID LAYOUT FOR SERVICE BOXES */
+/* Default mobile layout — stacked with spacing */
+.two-column-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1rem; /* optional: padding around content */
+}
+
+/* 2-column layout for mid-sized screens */
 @media screen and (min-width: 400px) {
   .two-column-layout {
     display: grid;
@@ -302,12 +310,13 @@ button {
   }
 }
 
+/* 4-column layout for large screens */
 @media screen and (min-width: 1025px) {
   #services-section .two-column-layout {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
   }
+}
 
   #services-section,
   .faq,
