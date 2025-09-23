@@ -37,16 +37,17 @@
       <nav class="primary-navigation" id="navMenu">
         <ul class="main-menu">
           <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">Services</a>
-            <ul class="dropdown-menu">
-              <li><a href="descriptive-analytics-consulting.html">Descriptive Analytics</a></li>
-              <li><a href="diagnostic-analytics-consulting copy.html">Diagnostic Analytics</a></li>
-              <li><a href="predictive-analytics-consulting.html">Predictive Analytics</a></li>
-              <li><a href="prescriptive-analytics-consulting.html">Prescriptive Analytics</a></li>
-            </ul>
-          </li>
+          <!-- <li class="dropdown"> -->
+            <!-- <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">Services</a> -->
+            <!-- <ul class="dropdown-menu"> -->
+              <!-- <li><a href="descriptive-analytics-consulting.html">Descriptive Analytics</a></li> -->
+              <!-- <li><a href="diagnostic-analytics-consulting copy.html">Diagnostic Analytics</a></li> -->
+              <!-- <li><a href="predictive-analytics-consulting.html">Predictive Analytics</a></li> -->
+              <!-- <li><a href="prescriptive-analytics-consulting.html">Prescriptive Analytics</a></li> -->
+            <!-- </ul> -->
+          <!-- </li> -->
           <!-- <li><a href="contact.html">Contact</a></li> -->
+           <li><a href="about-us.html">About</a></li>
           <li><a href="request-free-consultation.html">Submit Inquiry</a></li>
           <!-- <li><a href="privacy-policy.html">Privacy Policy</a></li> -->
           <!-- <li><a href="careers.html">Careers</a></li> -->
@@ -59,22 +60,18 @@
 
     <!-- Main content -->
     <main>
-      
-      <!-- Overview of service -->
-      <section class="overview">
-        <h1 class="business-info">Submit an inquiry</h1>
-        <!-- <p>Thanks for reaching out! We'll respond shortly. </p> -->
-        <!-- <h1 id="window-h1">Window Cleaning</h1> -->
-        <!-- <p>Your professional window cleaning experts serving residential and commerical clients in Kitsap County</p> -->
-      </section>
+    
 
        <!-- Main info -->
        <section id="main-info-section">
         <div class="main-info">
           <div class="moveable-content">
-            <p> Please provide the following information:</p>
+            <p>Please provide the following info and we'll get back to you shortly!</p>
             <!-- <form id="request-form" action="sendmail.php" method="post"> -->
-            <form id="request-form" action="https://formspree.io/f/mqadoanj" method="post">
+            <form id="request-form" action="https://api.web3forms.com/submit" method="post">
+
+              <input type="hidden" name="access_key" value="c0172e06-5884-4044-b16c-4dbe1ddf9cec">
+
               <label for="first-name">First Name:</label><br>
               <input type="text" id="first-name" name="first-name" required><br><br>
             
@@ -90,7 +87,7 @@
               <label for="message">Message:</label><br>
               <textarea id="message" name="message" rows="5" required></textarea><br><br>
             
-              <button type="submit">Submit</button>
+              <button id="submit-button" type="submit">Submit</button>
             </form>
             
           </div>
@@ -99,13 +96,11 @@
 
     <!-- Footer -->
     <footer>
-        <!-- <div>
-          <img src="images/transparent-logo.svg" alt="">
-        </div> -->
-        <div class="footer-text">
+      <div class="footer-text">
           <span>&copy; Copyright 2025 Reda Consulting</span>
-          <span> <a href="privacy-policy.html" style="color: white;">Privacy Policy</a> | <a href="careers.html" style="color: white;">Careers</a></span>
-    </footer>
+          <span> <a href="request-free-consultation.html" style="color: white;">Contact</a></span>
+      </div>
+  </footer>
 
   </body>
 </html>

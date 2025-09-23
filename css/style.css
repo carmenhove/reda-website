@@ -1,6 +1,3 @@
-
-/* For sizing, use rem which is a scaled value of the html font size. All else equal default value is 16pxl, but this can be changed by user preferences.*/
-
 /* BOX SIZING */
 * {
   box-sizing: border-box;
@@ -8,597 +5,406 @@
 
 /* LINKS */
 a {
-color: black;
-text-decoration: none;
-/* font-weight: bold; */
+  color: black;
+  text-decoration: none;
 }
 
-.faq a{
-font-weight: bold;
+.faq a {
+  font-weight: bold;
 }
 
 a:hover {
-color: blue;
-text-decoration: none;
+  color: blue;
+  text-decoration: none;
 }
 
-
 /* BODY */
-body{
+body {
   background-color: #ffffff;
   font-family: 'Open Sauce One', sans-serif;
-  font-family: 'Open Sauce Two', sans-serif;
-  font-family: 'Open Sauce Sans', sans-serif;
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
 /* HEADERS */
 h1 {
-padding-top: 1rem;
-color:black;
-font-size: 4rem;
-text-align: center;
-line-height: 1.1;
+  padding-top: 1rem;
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1.1;
 }
 
-/* SUBSEQUENT HEADERS */
 h2 {
-background-color: #036981;
-padding: 1.8rem;
-color: white;
-font-size: 1.75rem;
-text-align: center;
-line-height: 1.1;
+  background-color: #036981;
+  padding: 1.8rem;
+  color: white;
+  font-size: 1.75rem;
+  text-align: center;
+  line-height: 1.1;
 }
 
-p, h3, h4 {
-padding-left: 1rem;
-padding-right: 1rem;
-}
-
-/* Headings */
-#window-h1,
-#roof-h1, 
-#moss-h1, 
-#solar-h1,
-#crew-h1,
-#privacy-h1,
-#career-h1 {
-color: white;
+p, h3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* IMAGES */
-img{
+img {
   max-inline-size: 100%;
 }
 
 /* SECTIONS */
-section{
+section {
   margin-block: 0px;
 }
 
 /* UNORDERED LISTS */
 ul {
-padding-right: 1rem;
+  padding-right: 1rem;
 }
 
-.service-areas ul {
-list-style: none; 
+ul li {
+  padding: 5px 0px;
 }
 
-ul li { padding: 5px 0px; }
-
-ol li { 
-padding: 5px 0px;
-padding-right: 1rem;
-    
+ol li {
+  padding: 5px 0px;
+  padding-right: 1rem;
 }
 
-/* ----------------------------------------------------------------------------------------------------- */
-/* HEADER, LOGO AND NAVIGATION  */
+/* HEADER, LOGO AND NAVIGATION */
 header {
-background-color: #F5BE27;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px 20px;
-position: relative;
-flex-wrap: wrap;
+  background-color: #F5BE27;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  flex-wrap: wrap;
 }
 
-.logo img{
-height: 70px;
+.logo img {
+  height: 70px;
+}
 
 @media screen and (min-width: 600px) {
- height: 90px;
-}
+  .logo img {
+    height: 90px;
+  }
 }
 
 .primary-navigation {
-display: flex;
-}
-
-.main-menu {
-list-style: none;
-display: flex;
-gap: 20px;
-}
-
-.main-menu li {
-position: relative;
-}
-
-.main-menu a {
-text-decoration: none;
-color: black;
-padding: 10px;
-display: block;
-font-weight: normal; 
-}
-
-.main-menu a:hover {
-background-color: #F5BE27;
-}
-
-.dropdown-menu {
-display: none;
-position: absolute;
-top: 100%;
-left: 0;
-background-color: #F5BE27;
-list-style: none;
-min-width: 200px;
-z-index: 10;
-}
-
-.dropdown-menu li a {
-padding: 10px 15px;
-}
-
-.menu-toggle {
-display: none;
-font-size: 24px;
-color: black;
-cursor: pointer;
-}
-
-/* Desktop hover dropdown */
-@media (min-width: 601px) {
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-}
-
-/* Mobile styles */
-@media (max-width: 929px) {
-.primary-navigation {
-  width: 100%;
-  flex-direction: column;
-  display: none;
-}
-
-.primary-navigation.active {
   display: flex;
 }
 
 .main-menu {
-  flex-direction: column;
-  gap: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .main-menu li {
-  width: 100%;
+  position: relative;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.main-menu a:hover {
+  background-color: #F5BE27;
 }
 
 .dropdown-menu {
-  position: static;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #F5BE27;
+  list-style: none;
+  min-width: 200px;
+  z-index: 10;
 }
 
 .dropdown-menu li a {
-  padding-left: 30px;
-}
-
-.dropdown.open .dropdown-menu {
-  display: block;
+  padding: 10px 15px;
 }
 
 .menu-toggle {
-  display: block;
-}
-}
-
-/* ----------------------------------------------------------------------------------------------------- */
-/* * REQUEST BID SECTION */ 
-
-/* Buttons */
-.button-wrapper {
-display: flex;
-justify-content: center;
-margin-top: 1rem; 
-margin-bottom: 1rem;
+  display: none;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
 }
 
+@media (min-width: 601px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 929px) {
+  .primary-navigation {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+  }
+
+  .primary-navigation.active {
+    display: flex;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .main-menu li {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+  }
+
+  .dropdown-menu li a {
+    padding-left: 30px;
+  }
+
+  .dropdown.open .dropdown-menu {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* REQUEST BID SECTION */
 .button-group {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .button-group button {
-padding: 1.5rem 1.5rem;
-font-size: inherit;
-cursor: pointer;
-white-space: nowrap;
+  padding: 1.5rem 1.5rem;
+  font-size: inherit;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
-button{
-justify-content: center;
-background-color: black; 
-border: none;
-border-radius: 10px;
-padding: 3rem;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: inherit;
-white-space: nowrap;
+button {
+  justify-content: center;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 3rem;
+  text-align: center;
+  font-size: inherit;
 }
 
-.contact-button a{
-color: white;
-padding: 3rem;
+.contact-button a {
+  color: white;
+  padding: 3rem;
 }
 
-.request-bid{
-/* background-color: rgb(191, 224, 243); */
-color: black;
-text-align: center;
-padding-top: 0rem;
-padding-bottom: 1rem;
+.request-bid {
+  color: black;
+  text-align: center;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
 }
 
 .request-bid p {
-font-size: 1.75rem;
-padding-bottom: 1rem;
-padding-top: 1rem;
-margin: 1rem;
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin: 1rem;
 }
 
-/* ----------------------------------------------------------------------------------------------------- */
 /* INDEX PAGE */
-
-/* banner image */
-.banner img{
-width: 100%;
-height: auto;
-display: block;
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .main-info {
-margin: 1rem;
-background-color: #dfe7e6;
-/* border: 2px solid black; */
-border-radius: 12px;
-transition: background-color 0.3s ease;
-color: #333;
-overflow: hidden;
+  margin: 1rem;
+  background-color: #dfe7e6;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  color: #333;
+  overflow: hidden;
 }
 
-.business-info{
-margin: 0;
-padding: 1rem;
-font-size: 1.5rem;
-color: black;
+.business-info {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: black;
 }
 
-.business-name{
-margin-bottom: 1rem;
-font-size: 2rem;
+.business-name {
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 .moveable-content {
-padding: 1rem;
-text-align: left;
+  padding: 1rem;
+  text-align: left;
 }
 
-.moveable-content ul{
-text-align: left;
+.faq p {
+  font-weight: normal;
 }
 
-#left-push ul{
-text-align: left;
-}
-
-/* LINKS for LNI website (make same color as rest of text) */
-#license {
-color: blue;
-font-weight: normal;
-}
-
-#license:hover {
-color: blue;
-}
-
-/* .service-title a{
-font-weight: normal;
-} */
-
-/* SERVICE PAGES */
-.overview a{
-color: white;
-}
-
-/* MULTI COLUMN LAYOUT */
-.two-column-layout, 
-.three-column-layout {
-display: block; /* Default for smaller screens */
-margin-left: 2rem;
-margin-right: 2rem;
-}
-
-.two-column-layout > div,
-.three-column-layout > div {
-margin-bottom: 20px; /* Adjust as needed */
-}
-
-.photos{
-margin-block: 2rem;
-}
-
-#combined {
-display: flex;
-flex-wrap: wrap;        /* allows wrapping on smaller screens */
-gap: 1rem;
-width: 100%;
-align-items: stretch;   /* ensures children stretch to same height */
-}
-
-#combined > div {
-flex: 1 1 300px;        /* grow, shrink, base width */
-display: flex;
-flex-direction: column;  
-border-radius: 10px;
-overflow: hidden;
-}
-
-/* Images inside divs */
-#combined img {
-width: 100%;
-flex: 1 0 auto;         /* allow image to expand to fill remaining height */
-object-fit: cover;
-display: block;
-}
-
-/* Paragraph styling */
-#combined p {
-padding: 1rem;
-margin: 0;
-background-color: #d8e7e4;
-color: black;
-flex: 0 0 auto;         /* text takes only needed space */
-}
-
-/* On smaller screens, move the "big" div to the top */
-@media (max-width: 600px) {
-#top-pic {
-  order: -1; /* moves it to the top */
-}
-}
-
-.wrapped-img {
-float: left;
-margin: 10px 30px 30px 30px; 
-width: 250px;
-}
-
-.privacy-overview, 
-#join-our-team{
-margin: 0px;
-}
-
-/* INDEX PAGE OVERVIEW */
-/* 360 mobile, 666 landscape mobile, 768 tablet, 1024 large tablet, 1300 desktop */
-
-.service-title{
-  background-color:  #0d608f;
-  /* background-color: rgba(0, 0, 0, 0.5); */
+/* SERVICE SECTION */
+.service-title {
+  background-color: #0d608f;
   color: white;
   padding: 10px;
   text-align: center;
 }
 
-.service-title a{
+.service-title a {
   text-decoration: none;
   color: #ffffff;
-  font-weight: normal;
 }
 
-/* Shared styles */
 #descriptive,
 #diagnostic,
 #predictive,
 #prescriptive {
-position: relative;
-width: 100%;
-height: 15rem;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-border-radius: 1rem;
-overflow: hidden;
-/* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+  position: relative;
+  width: 100%;
+  background-color: lightblue;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
 }
 
-/* Individual background images */
-#descriptive {
-background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  url('../images/background.jpg');
-}
-
-#diagnostic {
-background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  url('../images/background.jpg');
-}
-
-#predictive {
-background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  url('../images/background.jpg');
-}
-
-#prescriptive {
-background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  url('../images/background.jpg');
-}
-
-.our-process{
-  @media screen and (min-width: 600px) {
-      font-size: 1.25rem;
-   }
-}
-
-footer {
-background-color: #0d608f;
-background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10));
-background-position: bottom;
-padding: 1.5rem;
-margin-top: 1rem;
-size: 1rem;
-
-@media screen and (max-width: 600px) {
-  font-size: 15px;
-}
-
-}
-
-.footer-text{
-color: white;
-display: flex;
-justify-content: space-between;
-}
-
-.footer a{
-color: white;
-}
-
-.footer a:visited { text-decoration: none; color:white; }
-
-/* MEDIA QUERIES */
-/* Default = 360 */
-/* 666, 768, 1024, 1300 */
-
-/* @media screen and (min-width: 1100px) {
-
-.overview{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-} */
-
-/* AT 400PX */
+/* GRID LAYOUT FOR SERVICE BOXES */
 @media screen and (min-width: 400px) {
-.two-column-layout{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  .two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
 }
 
-.three-column-layout{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-}
-}
-
-/* AT 1025PX */
 @media screen and (min-width: 1025px) {
+  #services-section .two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
 
-#services-section .two-column-layout{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
+  #services-section,
+  .faq,
+  .testimonials {
+    margin: 1rem;
+    background-color: white;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    color: #333;
+    overflow: hidden;
+  }
 }
 
-.service-areas ul{
-  column-count: 5;
+/* FOOTER */
+footer {
+  background-color: #0d608f;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10));
+  padding: 1.5rem;
+  margin-top: 1rem;
 }
 
-
-#services-section, .service-areas, .testimonials, .our-process, .about-us, .faq{
-  margin: 1rem;
-  background-color: white;
-  /* background-color: #dfe7e6; */
-  /* border: 2px solid black; */
-  border-radius: 12px;
-  transition: background-color 0.3s ease;
-  color: #333;
-  overflow: hidden; /* ensures rounded corners clip children */
-}
+.footer-text {
+  color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
-.faq p{
-font-weight: normal;
+.footer a {
+  color: white;
 }
 
-.moveable-div h2, 
+.footer a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* MAIN INFO RESPONSIVE */
+.main-info p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media (max-width: 666px) {
+  .main-info p {
+    font-size: 1.5rem;
+  }
+}
+
+/* FAQ SECTION */
+.moveable-div h2,
 #services-section h2,
-.service-areas h2, 
-.testimonials h2, 
-.our-process h2, 
 .faq h2,
-.about-us h2 {
+.testimonials h2 {
   margin: 0rem;
   padding: 1.8rem 2rem;
   background-color: #F5BE27;
   color: black;
 }
 
-.main-info p {
-  text-align: center;
-  font-size: 2rem;
+.responsive-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 2rem;
 }
 
-.about-us-subdiv{
-  background-color: #d5dcdb;
+/* Default: side-by-side */
+.responsive-box img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
 }
 
-@media screen and (min-width: 666px) and (max-width: 1024px) {
-.service-areas ul{
-  column-count: 2;
-  font-size: 1rem;
+.text-content {
+  flex: 1;
+  min-width: 0;
 }
 
-}
-
+/* STACK + FULL WIDTH ON SMALL SCREENS */
 @media (max-width: 666px) {
-.main-info p {
-  font-size: 1.5rem; /* smaller font size */
-}
+  .responsive-box {
+    flex-direction: column;
+  }
+
+  .responsive-box img,
+  .responsive-box .text-content {
+    width: 100%;
+  }
 }
 
-/* Shared styles for all header sections */
-.overview {
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-color: white;
-padding: 4rem 1rem;
-text-align: center;
-background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url('../images/background.jpg');
+#request-form{
+  text-align: center;
 }
 
-.overview h1{
+#submit-button{
+  background-color: #0d608f;
   color: white;
+  padding: 1rem;
 }
-
-.overview p{
-  font-size: 1.75rem;
-}
-
