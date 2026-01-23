@@ -19,7 +19,7 @@ a {
 
 a:hover {
   color: blue;
-  text-decoration: none;
+  text-decoration: blue;
 }
 
 
@@ -396,6 +396,15 @@ button{
   overflow: hidden;
 }
 
+#quant,
+#mixed {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
 .service-title{
     background-color: #0d608f;
     color: white;
@@ -541,7 +550,15 @@ footer {
     height: auto;
     border-radius: 8px;
   }
-  
+
+  .responsive-box a{
+    color: blue;
+  }
+
+  .faq a{
+    color: blue;
+  }
+
   .text-content {
     flex: 1;
     min-width: 0;
